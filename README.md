@@ -15,6 +15,15 @@ CTP版本：MdApi().GetApiVersion(), TraderApi().GetApiVersion()
 linux 64位 python 2.7.16 64位,测试通过。
 windows 64位, python 2.7.16 64 位，测试通过。
 
+如果linux下获取机器信息权限不够的话，请用：
+
+sudo chmod o+r  /sys/firmware/dmi/tables/smbios_entry_point
+sudo chmod o+r /dev/mem
+sudo chmod o+r /sys/firmware/dmi/tables/DMI
+
+修改一下权限即可。
+
+
 
 
 行情服务器测试程序：
